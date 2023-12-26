@@ -1,4 +1,4 @@
-import { Container, Paragraph, Section, Subtitle, Title, Wrapper } from "./styled";
+import { Container, Paragraph, Section, Title, Wrapper } from "./styled";
 
 export const HomeSection = () => {
   return (
