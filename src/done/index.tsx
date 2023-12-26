@@ -15,8 +15,14 @@ export const DoneSection = () => {
       <Wrapper>
         <Container>
           <Title>Estarei ai</Title>
-          <Subtitle>Combinado, {food} na {dayWeek}, as 8?</Subtitle>
-          <Paragraph> Não vou errar</Paragraph>
+          {food && dayWeek && (
+            <>
+              <Subtitle>
+                Combinado, {food} na {dayWeek}, as 8?
+              </Subtitle>
+              <Paragraph> Não vou errar</Paragraph>
+            </>
+          )}
         </Container>
       </Wrapper>
     </Section>

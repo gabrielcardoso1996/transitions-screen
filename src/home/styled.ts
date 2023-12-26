@@ -40,6 +40,7 @@ export const Title = styled.h1`
   @media (max-width: 768px) {
     padding: 1em;
     text-align: center;
+    font-size: 2rem;
   }
 `;
 
@@ -47,6 +48,11 @@ export const Subtitle = styled.h2`
   color: ${Colors.quaternary};
   font-size: 3rem;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -55,5 +61,8 @@ export const Paragraph = styled.p`
   @media (max-width: 768px) {
     padding: 1em;
     text-align: center;
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 `;

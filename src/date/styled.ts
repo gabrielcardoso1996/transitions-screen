@@ -46,6 +46,7 @@ export const Title = styled.h1`
   @media(max-width: 768px) {
     padding: 1em;
     text-align: center;
+    font-size: 2rem;
   }
 `;
 
@@ -53,6 +54,11 @@ export const Subtitle = styled.h2`
   color: ${Colors.quaternary};
   font-size: 3rem;
   text-transform: uppercase;
+  @media(max-width: 768px) {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -60,16 +66,25 @@ export const Paragraph = styled.p`
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Montserrat", serif;
+  @media(max-width: 768px) {
+    padding: 1em;
+    text-align: center;
+    font-size: 1rem;
+  }
 `;
 
 export const ContainerDaysWeek = styled.div`
   overflow: hidden;
-  padding-bottom: 0;
   background-color: ${Colors.tertiary};
   border-radius: 1.39em;
   padding: 2.29em 2.78em 8.33em;
+  padding-bottom:  2.78em;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 `;
 
 interface DayWeekProps {
@@ -102,4 +117,9 @@ export const LabelDayWeek = styled.label<DayWeekProps>`
     transition: all 0.1s ease-in-out;
     font-size: 1.8rem;
   `}
+  @media(max-width: 768px) {
+   //  padding: 0.5em;
+    text-align: center;
+    font-size: 1rem;
+  }
 `;
